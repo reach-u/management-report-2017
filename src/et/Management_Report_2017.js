@@ -1,10 +1,12 @@
 /*globals window, document, setTimeout*/
+
 (function () {
   "use strict";
   const head = document.head;
   const body = document.body;
   const $ = (selector) => body.querySelector(selector);
   const text = `
+
 <h1>Tegevusaruanne 2017</h1>
 <p>
   Reach-U on tarkvaraettevõte. Meie põhilised tegevusvaldkonnad on:
@@ -30,13 +32,18 @@
 <p>
   Kuna XX protsenti Reach-U käibest laekub välisvaluutas, on valuutakursside kõikumine ettevõtte finantstulemust mõjutav. 2017. aastal kandsime kursimuudatustest kahju XXEUR.
 </p>
-<p class="slidetext one">
- <span>Partnerid:</span> <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+
+<!-- Lorem ipsum(EE), dolor sit amet(EE), consectetur(EE), adipiscing elit -->
+<p class="slidetext friends">
+ <span>Partnerid:</span> <span>Lorem ipsum(EE), dolor sit amet(EE), consectetur(EE), adipiscing elit(CA), sed do eiusmod(CA), tempor incididunt(EE), ut labore et dolore magna aliqua(EE), Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
 </p>
-<p class="slidetext two">
-<span>Tegijad:</span> <span>Aivar<sub>26</sub> Teet<sub>25</sub> Mati<sub>23</sub> Katrin<sub>20</sub> Siret<sub>19</sub> Ando<sub>18</sub> Hanna<sub>16</sub> Andra<sub>14</sub> Leino<sub>13</sub> Aire<sub>12</sub> Sven<sub> 12</sub> Toivo<sub>12</sub> Gaspar<sub>11</sub> Indrek<sub>11</sub> Steve<sub>11</sub> Elar<sub>10</sub> Ivar<sub>10</sub> Elis<sub>9</sub> Joosep<sub>9</sub> Taavi<sub>9</sub> Katre<sub>7</sub> Rauni<sub>7</sub> Jevgeni<sub>6</sub> Ülo<sub>6</sub> Lauri<sub>5</sub>  Madis<sub>5</sub> Piret<sub>5</sub> Tõnis<sub>5</sub> Ingrid<sub>4</sub> Kätlin<sub>4</sub> Liis<sub>4</sub> Katerina<sub>3</sub> Leelo<sub>3</sub> Toomas<sub>3</sub> Dario<sub>2</sub> Gert<sub>2</sub> Ivo<sub>2</sub> Janno<sub>2</sub> Ken<sub>2</sub> Maris<sub>2</sub> Rait<sub>2</sub> Sander<sub>2</sub> Taavi<sub>2</sub> Aadi<sub>1</sub> Alisa<sub>1</sub> Halliki<sub>1</sub> Helen<sub>1</sub> Jens-Konrad<sub>1</sub> Kadri<sub>1</sub> Kalev<sub>1</sub> Kaspar<sub>1</sub> Kuido<sub>1</sub> Madis<sub>1</sub> Maiga<sub>1</sub> Margus<sub>1</sub> Marta<sub>1</sub> Martin<sub>1</sub> Meelis<sub>1</sub> Märit<sub>1</sub> Oliver<sub>1</sub> Sander<sub>1</sub> Sander<sub>1</sub> Simona<sub>1</sub> Taavi<sub>1</sub> Taisi<sub>1</sub> Tanel<sub>1</sub> Tõnu<sub>1</sub> Ülari<sub>1</sub></span>
+
+<!-- Lorem ipsum(EE), dolor sit amet(EE), consectetur(EE), adipiscing elit -->
+<p class="slidetext heroes">
+<span>Tegijad:</span> <span>Aivar(26), Teet(25), Mati(23), Katrin(20), Siret(19), Ando(18), Hanna(16), Andra(14), Leino(13), Aire(12), Sven(12), Toivo(12), Gaspar(11), Indrek(11), Steve(11, ruler nominee), Elar(10), Ivar(10), Elis(9), Joosep(9), Taavi(9), Katre(7), Rauni(7), Jevgeni(6), Ülo(6), Lauri(5),  Madis(5), Piret(5), Tõnis(5), Ingrid(4), Kätlin(4), Liis(4), Katerina(3), Leelo(3), Toomas(3), Dario(2), Gert(2), Ivo(2), Janno(2), Ken(2), Maris(2), Rait(2), Sander(2), Taavi(2), Aadi(1), Alisa(1), Halliki(1), Helen(1), Jens-Konrad(1), Kadri(1), Kalev(1), Kaspar(1), Kuido(1), Madis(1), Maiga(1), Margus(1), Marta(1), Martin(1), Meelis(1), Märit(1, ruler & rubik), Oliver(1), Sander(1, rubik nominee), Sander(1), Simona(1), Taavi(1), Taisi(1), Tanel(1), Tõnu(1), Ülari(1) </span>
 </p>
 `;
+
 
   const style = `
   <style>
@@ -50,10 +57,11 @@
     h1, p, ul, .salesgrowth {transition: all 0.2s linear 0s;}
     .slidetext {position: fixed; left: 0; right: 0; padding: 0; height: 30px; line-height: 30px; font-size: 12px; font-style: italic; white-space: nowrap; background: #eee; color: #333; border-top: solid 1px #aaa;}
     .slidetext span {display: block; position: absolute; box-sizing: border-box; top: 0; left: 0;}
+    .slidetext sub {margin-right: 5px;}
     .slidetext span:nth-child(1) {top: -1px; width: 90px; padding: 0 0 0 20px; background: inherit; border: inherit; font-weight: bold; z-index: 2}
     .slidetext span:nth-child(2) {transform: translateX(3000px)}
-    .slidetext.one {bottom: 30px;}
-    .slidetext.two {bottom: 0;}
+    .slidetext.friends {bottom: 30px;}
+    .slidetext.heroes {bottom: 0;}
   </style>`;
 
   body.innerHTML = text;
@@ -61,14 +69,15 @@
   head.innerHTML += `<title>${$("h1").innerText}</title>`;
   body.childNodes.forEach((el, idx) => el.style && setTimeout(() => el.style.opacity = "1", idx * 100));
   const slide = (el, speed = 60) => {
+    el.innerHTML = el.innerHTML.replace(/(\s?\()([\w\s,&;+]+)(\),?)/g, "<sub>$2</sub>");
     const {style} = el, from = window.innerWidth, to = -el.offsetWidth, duration = (from - to) / speed;
     const start = () => {setTimeout(() => {style.transition = `transform ${duration}s linear 0s`; style.transform = `translateX(${to}px)`;}, 500);};
     const reset = () => {style.transition = "none"; style.transform = `translateX(${from}px)`; start();};
     el.addEventListener("transitionend", reset);
     reset();
   };
-  setTimeout(() => slide($(".slidetext.one span:nth-child(2)"), 60), 2000);
-  setTimeout(() => slide($(".slidetext.two span:nth-child(2)"), 60), 2000);
+  setTimeout(() => slide($(".slidetext.friends span:nth-child(2)"), 60), 2000);
+  setTimeout(() => slide($(".slidetext.heroes span:nth-child(2)"), 60), 2000);
   setTimeout(() => $(".salesgrowth").style.transform = "scale(1.5)", 2500);
 }());
 
