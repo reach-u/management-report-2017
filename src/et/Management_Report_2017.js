@@ -76,6 +76,9 @@ Reach-U on oma pea 30 tegevusaasta jooksul arenenud kaartide tegijast geoinfosü
 
   body.innerHTML = text;
   head.innerHTML = style;
+  head.innerHTML += `<link rel="shortcut icon" href="http://pump.reach-u.com/favicon.ico"/>`;
+  head.innerHTML += `<meta charset="utf-8">`;
+  head.innerHTML += `<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">`;
   head.innerHTML += `<title>${$("h1").innerText}</title>`;
   body.childNodes.forEach((el, idx) => el.style && setTimeout(() => el.style.opacity = "1", idx * 100));
   const slide = (el, speed = 60) => {
