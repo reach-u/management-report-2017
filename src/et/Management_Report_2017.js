@@ -56,7 +56,8 @@ Reach-U on oma pea 30 tegevusaasta jooksul arenenud kaartide tegijast geoinfosü
 
   const style = `
   <style>
-    body {margin: 0 auto 100px auto; max-width: 1024px; font-family: Open Sans, Helvetica, Arial, sans-serif; font-size: 14px; font-weight:lighter; line-height: 20px; overflow-x: hidden}
+    html, html > body { margin: 0 auto 100px auto; padding: 0}
+    body {max-width: 1024px; font-family: Open Sans, Helvetica, Arial, sans-serif; font-size: 14px; font-weight:lighter; line-height: 20px; overflow-x: hidden}
     h1 {margin: 0 0 20px 0; padding: 20px; color: rgb(255, 255, 255); background: rgb(246, 89, 18) url("http://www.reach-u.com/uploads/6/1/8/4/61840011/1443454382.png") no-repeat right 10px; font-weight:lighter;}
     @media all and (max-width: 600px) {h1{padding-top: 60px; background-position: -5px 10px;}}
     p {margin: 0; padding: 10px 20px;}
@@ -89,4 +90,3 @@ Reach-U on oma pea 30 tegevusaasta jooksul arenenud kaartide tegijast geoinfosü
   setTimeout(() => slide($(".slidetext.heroes span:nth-child(2)"), 60), 2000);
   setTimeout(() => $(".salesgrowth").style.transform = "scale(1.5)", 2500);
 }());
-
