@@ -9,7 +9,7 @@
 
 <h1>Tegevusaruanne 2017</h1>
 <p>
-Reach-U on oma pea 30 tegevusaasta jooksul arenenud kaartide tegijast geoinfosüsteemide loojaks ja sealt edasi tarkvaraettevõtteks. Rõhutamaks seda muutuste teed asendasime sellel aastal tegevuskaardid toimiva Javascripti koodiga (https://github.com/reach-u/management-report-2017). <!-- Tarkvarakaugete lugejate jaoks on tegevusaruanne kättesaadav ka aadressil http://www.reach-u.com/management-report-2017.html-->
+Reach-U on oma pea 30 tegevusaasta jooksul arenenud kaartide tegijast geoinfosüsteemide loojaks ja sealt edasi tarkvaraettevõtteks. Rõhutamaks seda muutuste teed asendasime sellel aastal tegevuskaardid toimiva Javascripti koodiga (https://github.com/reach-u/management-report-2017). <!-- Tarkvarakaugete lugejate jaoks on tegevusaruanne kättesaadav ka aadressil http://www.reach-u.com/management-report-2017.html -->
 </p>
 <p>
 Reach-U põhilised tegevusvaldkonnad on:
