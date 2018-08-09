@@ -13,4 +13,6 @@ The official management report is in Estonian as that is the Commercial Register
 
 ## Q: Why Javasript code?
 
-During our almost 30 years of history, our management reports have grown and evolved with us from year to year, reflecting our journey from a map maker to GIS solutions provider and then to a software company. In the first management reports we combined the skills of cartographs and software engineers, demonstrating the power of maps by rendering our management report in the form of one. When entering a new business area – city planning – the important step also reflected in our management reports, taking the form of a subway map. Now, when we have grown to a software development company, we decided to replace our map-version management reports with a fully functioning Javascript code.
+Across three decades Reach-U evolved from map maker to GIS solutions provider and developer of complex software, with customers around the world. In the first management reports we combined the skills of cartographs and software engineers, demonstrating the power of maps by rendering our management report in the form of one. When entering a new business area – city planning – the important step also reflected in our management reports, taking the form of a subway map.
+
+This year we switched gears – the management report is not text, but fully functional JavaScript code. This again demonstrates our vision – when working in an agile manner and delivering builds on a daily basis, communication must be so good that even the code must be readable as plain English.
